@@ -1,4 +1,3 @@
-
 // Sample Test Cases
 // Input:19
 // Output:true
@@ -7,21 +6,13 @@
 // Output:false
 
 function PrimeTime(num) {
-
-var result;
-  if(num === 1 || num === 2 || num === 3){
-    result = true;
-  } else {
+  var result = true;
     for(var i = 2; i < (num-1); i++){
       if(num % i === 0){
         result = false;
         return result;
-      } else {
-        result = true;
-        return result;
       }
     }
-  }
   return result;
 }
 
